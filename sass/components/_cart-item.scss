@@ -1,0 +1,52 @@
+.cart-item {
+  display: flex;
+  width: 25vw;
+  margin-top: 10px;
+  img {
+    @include Image(6vw);
+    border-radius: $regular-border-size;
+  }
+  .price {
+    padding: 0.5rem;
+    .overline {
+      text-decoration: line-through;
+      color: #00d890b9;
+      font-size: $regular-font-size;
+    }
+    .orange {
+      font-size: 1.4rem;
+      color: #f2984a;
+      font-weight: $bold-font;
+    }
+    .counter {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1.2rem;
+
+      @include singleProduct(6vw);
+      button {
+        border: none;
+        background-color: lightgrey;
+        padding: 0.2rem;
+        border-radius: 0.1rem;
+        &:hover {
+          background-color: grey;
+          cursor: pointer;
+        }
+
+        i {
+          padding: 2px 3px;
+        }
+      }
+      .number {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+
+  .sp-total {
+    margin-top: $regular-margin;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,46 @@
+.button {
+  text-align: right;
+  button {
+    background-color: #1b2417;
+    border-radius: 0.7rem;
+    padding: 1rem 0;
+    color: #fff;
+    font-weight: $bold-font;
+    border: none;
+    min-width: 25%;
+    &:hover {
+      background-color: rgb(223, 136, 37);
+      cursor: pointer;
+      transition: ease-in-out 0.3s;
+    }
+  }
+}
+
+.remove {
+  margin-top: 10px;
+  background-color: #1b2417;
+  color: #fff;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 200ms;
+}
+.remove:hover {
+  background-color: rgb(223, 136, 37);
+}
+
+.close-card {
+  background-color: #1b2417;
+  margin-top: 10px;
+  color: #fff;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 200ms;
+}
+
+.close-card:hover {
+  background-color: rgb(223, 136, 37);
+}

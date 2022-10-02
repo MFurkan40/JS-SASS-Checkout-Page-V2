@@ -1,0 +1,12 @@
+.cart {
+  background-color: $cart-background;
+  padding: 2rem;
+  border-radius: $regular-border-size;
+  box-shadow: $cart-shadow;
+  z-index: 95;
+
+  h2 {
+    font-size: $regular-font-size;
+    color: $heading-color;
+  }
+}

@@ -1,0 +1,75 @@
+@mixin singleProduct($width) {
+  width: $width;
+  border: $thin-border;
+  text-align: center;
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+}
+
+@mixin Image($width) {
+  width: $width;
+}
+
+//  MINIMUM
+
+@mixin media-xsm {
+  @media screen and (min-width: 0px) {
+    @content;
+  }
+}
+
+@mixin media-sm {
+  @media screen and (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}
+
+//  MAXIMUM
+
+@mixin media-xsm-2 {
+  @media screen and (max-width: 0px) {
+    @content;
+  }
+}
+
+@mixin media-sm-2 {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-md-2 {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-lg-2 {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-xl-2 {
+  @media screen and (max-width: 1600px) {
+    @content;
+  }
+}
