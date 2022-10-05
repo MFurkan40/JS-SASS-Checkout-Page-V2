@@ -39,7 +39,10 @@ cartsSection.addEventListener("click", (e) => {
         )
       ) {
         // remove
-        e.target.parentElement.parentElement.parentElement.parentElement.remove();
+        // e.target.parentElement.parentElement.parentElement.parentElement.remove();
+
+        // ! With closest() short way
+        e.target.closest(".cart-item").remove();
         calculateTotalPrice();
       }
     }
